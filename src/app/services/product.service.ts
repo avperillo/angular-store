@@ -54,4 +54,14 @@ export class ProductService {
   getAll(): Observable<Array<Product>> {
     return of(this.products);
   }
+
+  getBy(id: string): Observable<Product> {
+    const product = this.products.find(p => p.id === id);
+
+    if (!product) {
+      throw new Error(`El producto [${id}] no existe`);
+    }
+
+    return of(product);
+  }
 }

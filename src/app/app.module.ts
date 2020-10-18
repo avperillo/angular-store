@@ -4,7 +4,7 @@ import { LOCALE_ID, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/products/product-list/product-list.component';
-import { ProductDetailComponent } from './components/products/product-detail/product-detail.component';
+import { ProductListItemComponent } from './components/products/product-list-item/product-list-item.component';
 
 import localeES from '@angular/common/locales/es';
 import { registerLocaleData } from '@angular/common';
@@ -17,7 +17,7 @@ registerLocaleData(localeES);
 @NgModule({
   declarations: [
     AppComponent,
-    ProductDetailComponent,
+    ProductListItemComponent,
     ProductListComponent,
     HomeComponent,
     FooterComponent,
