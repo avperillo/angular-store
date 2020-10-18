@@ -12,16 +12,16 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
-    path: '**',
-    component: PageNotFoundComponent
-  },
-  {
     path: 'home',
     component: HomeComponent
   },
   {
     path: 'products',
     component: ProductListComponent
+  },
+  {
+    path: '**',
+    component: PageNotFoundComponent
   }
 ];
 
