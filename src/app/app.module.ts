@@ -12,6 +12,7 @@ import { HomeComponent } from './components/core/home/home.component';
 import { FooterComponent } from './components/core/footer/footer.component';
 import { NavbarComponent } from './components/core/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/core/page-not-found/page-not-found.component';
+import { ProductDetailComponent } from './components/products/product-detail/product-detail.component';
 registerLocaleData(localeES);
 
 @NgModule({
@@ -22,7 +23,8 @@ registerLocaleData(localeES);
     HomeComponent,
     FooterComponent,
     NavbarComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    ProductDetailComponent,
   ],
   imports: [
     BrowserModule,

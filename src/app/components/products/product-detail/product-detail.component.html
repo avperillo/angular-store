@@ -1,0 +1,10 @@
+<div>
+    <img [src]="currentProduct.image" [alt]="currentProduct.title">
+</div>
+<div>
+    <ul>
+        <li>Nombre: {{ currentProduct.title }}</li>
+        <li>Precio: {{ currentProduct.price | currency }}</li>
+    </ul>
+    <p>{{ currentProduct.description }}</p>
+</div>
