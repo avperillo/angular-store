@@ -11,6 +11,8 @@ import { FooterComponent } from './components/core/footer/footer.component';
 import { NavbarComponent } from './components/core/navbar/navbar.component';
 import { PageNotFoundComponent } from './components/core/page-not-found/page-not-found.component';
 import { PublicLayoutComponent } from './components/layouts/public-layout/public-layout.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatBadgeModule, MatButtonModule, MatIconModule, MatToolbarModule } from '@angular/material';
 
 registerLocaleData(localeES);
 
@@ -25,7 +27,12 @@ registerLocaleData(localeES);
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule,
+    MatBadgeModule,
   ],
   providers: [
     {provide: LOCALE_ID, useValue: 'es'}
